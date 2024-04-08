@@ -1,0 +1,242 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  font-size: 15px;
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.main {
+    height: 100vh;
+    width: 100%;
+    background-color: blue;
+}
+
+
+.navbar {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 20vh;
+    width: 100%;
+    background-color: #fff;
+  }
+  
+  .navmain {
+    width: fit-content;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    max-width: 1170px;
+    height: 100%;
+    position: relative;
+  }
+  
+  .logo {
+    width: auto;
+    height: 50%;
+    margin-right: 20px;
+  }
+  
+  .options-container {
+display: inline-block;
+    display: flex;
+align-items: center;
+    flex-wrap: wrap;
+    margin: 0% 6%;
+    width: 70%;
+    height: 100%;
+  }
+  
+  .option {
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  .option.active {
+    background-color: #f0f0f0;
+  }
+  
+  .sub-options {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    padding: 10px;
+    border: 1px solid #ddd;
+    display: none;
+  }
+  
+  .option.active .sub-options {
+    display: block;
+  }
+  
+
+  .nav-right-item {
+    /* height: 18vh;
+    width: 30%; */
+       display: flex;
+    display: inline-block;
+    /* padding-right: 10%; */
+   
+  }
+
+  .navmain .nav-right-item {
+    display: flex;
+    justify-content: flex-end;
+  margin-right: 4vw;
+  }
+  .contact-us {
+    height: 6.5vh;
+    width: 13vw;
+    cursor: pointer;
+    white-space: nowrap; 
+    display: inline-block;
+    position: relative;
+    font-size: 16px;
+    font-weight: 400;
+    border: 1px solid transparent;
+    border-radius: 25px !important;
+    background-color: #7db434 !important;
+    color: #fff;
+    line-height: normal;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none !important;
+    -webkit-appearance: none;
+    border-radius: 30%;
+    z-index: 1;
+    margin-right: 4vw;
+  }
+  
+  .menu-button {
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    color: #000;
+    font-size: 1rem;
+  margin-left: -3vw;
+  }
+  
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 90px;
+    height: 80px;
+    background-color: #fff;
+    z-index: 1;
+  }
+  
+  .navbar-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .navbar-logo {
+    color: #000;
+    font-size: 2rem;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .nav-menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    text-align: center;
+    margin-right: -22px;
+  
+    /* @media (max-width: 768px) {
+      display: none;
+    } */
+  }
+  
+  .nav-links {
+    color: #000;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 0 1rem;
+    height: 100%;
+  
+    /* &:hover {
+      border-bottom: 3px solid #000;
+    } */
+  }
+  
+  .nav-icon {
+    display: none;
+  
+    /* @media (max-width: 768px) {
+      display: block;
+      position: absolute;
+      right: 0;
+      cursor: pointer;
+    } */
+  }
+  
+  .fa-times, .fa-bars {
+    color: #000;
+    background: transparent;
+  }
+  
+  
+  .active {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    background-color: #fff;
+  }  
+
+  .sub-options {
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #fff;
+    padding: 10px;
+    border: 1px solid #ddd;
+    display: none;
+    z-index: 1;
+  }
+  
+  .option.active .sub-options {
+    display: block;
+  }
+  
+  .option.active::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 8px solid #333;
+    top: calc(100% - 4px);
+    left: calc(50% - 8px);
+  }
+  
+
+  
