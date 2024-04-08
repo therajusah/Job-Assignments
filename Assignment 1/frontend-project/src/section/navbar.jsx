@@ -16,7 +16,7 @@ const Navbar = () => {
 
   const handleOptionClick = (option) => {
     console.log("Clicked option:", option);
-    setActiveOption(option);
+    setActiveOption(activeOption === option ? null : option); // Toggle active option
   };
 
   return (
@@ -32,9 +32,9 @@ const Navbar = () => {
             <FontAwesomeIcon icon={faAngleDown} />
             {activeOption === "Solutions" && (
               <div className="sub-options">
-               <ul>
-                <li>Hi</li>
-               </ul>
+                <ul>
+                  <li>Hi</li>
+                </ul>
               </div>
             )}
           </div>
@@ -64,9 +64,7 @@ const Navbar = () => {
           </div>
         </div>
         <div className="nav-right-item">
-          
           <button className="contact-us">Contact Us</button>
-         
           <button className="menu-button" onClick={toggleNav}>
             {isOpen ? <FontAwesomeIcon icon={faTimes} /> : <FontAwesomeIcon icon={faBars} />}
           </button>
@@ -84,4 +82,4 @@ const Navbar = () => {
   )
 }
 
-export default Navbar
+export default Navbar;
